@@ -5,7 +5,7 @@ Welcome to the official repository for the **Robotics Winter Camp 2024** hosted 
 ---
 
 ## Why Join?  
-- Gain practical exposure to OpenCV and PyBulelt, a powerful tool in computer vision.  
+- Gain practical exposure to OpenCV and PyBulelt, some powerful tools in Robotics .  
 - Build a foundation for exploring robotics and its applications.  
 - Collaborate with like-minded peers and delve into cutting-edge topics and more in upcoming sessions.  
 
