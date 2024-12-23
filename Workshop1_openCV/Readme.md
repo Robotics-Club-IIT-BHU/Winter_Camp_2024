@@ -25,7 +25,7 @@ The OpenCV Workshop was designed for beginners to introduce the basics of OpenCV
 
 If you missed the workshop or want to revisit the concepts, the complete recording is available on YouTube. Watch it here: [OpenCV Workshop Recording](https://youtu.be/AnBlULS4haA)
 
-## Submission Links
+## Submission Links  (DEADLINE SUNDAY(29/12/24)EOD )
 
 - **Task 1 Submission**: [Submit Task 1](https://docs.google.com/forms/d/e/1FAIpQLSfsyBjQauKvKUIoDAWa0zCnrWxvl1I77qPDPxVBkHUMM3dRzg/viewform?usp=sharing)  
 - **Task 2 Submission**: [Submit Task 2](https://docs.google.com/forms/d/e/1FAIpQLSdD8lWBo7fHTWjOmAVVIKcBE8cQCbEF7Rgw3YnM8sjkpAuptw/viewform?usp=sharing)
