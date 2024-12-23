@@ -20,8 +20,9 @@ This repository includes:
 ---
 
 ## Stay Connected  
-- **WhatsApp Group**: [Join for Updates](https://chat.whatsapp.com/HenNRqPSQ2cEU3PNp614SE)  
-- **YouTube Link**: [Robotics Youtube Channel](https://youtube.com/@roboticsclubiitbhu92?si=2OPQKumfNhv_Xhrg)
+- **WhatsApp Group:** [Join for Updates](https://chat.whatsapp.com/HenNRqPSQ2cEU3PNp614SE)  
+- **YouTube Link:** [Robotics Youtube Channel](https://youtube.com/@roboticsclubiitbhu92?si=2OPQKumfNhv_Xhrg)
+- **Instagram:** [robotics_club.iitbhu](https://www.instagram.com/robotics_club.iitbhu?igsh=MTJsNm5tbzV1aDNseg==)
 
 ---
 
