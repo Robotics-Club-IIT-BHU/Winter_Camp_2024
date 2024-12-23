@@ -18,7 +18,7 @@ Detect polygons in a given image, identify their centroids using the `cv2.contou
 
 ---
 
-## Task 2: Invisibility Cloak
+## Task 2: Invisibility Cloak   (BONUS TASK ---MORE FOR LEARNING PURPOSE AND LESS FOR EVALUATION)
 
 ### Objective
 Create an "invisibility cloak" effect using masking techniques on a video feed.
