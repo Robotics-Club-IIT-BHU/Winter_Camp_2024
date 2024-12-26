@@ -14,7 +14,7 @@ Before starting, watch this video tutorial on setting up your environment with A
 
 ```
 PyBullet
-├── Codes
+├── Codes (used in Presentation)
 │   ├── 2_R_robot.py
 │   ├── Joint_array.py
 │   ├── Velocity_control.py
