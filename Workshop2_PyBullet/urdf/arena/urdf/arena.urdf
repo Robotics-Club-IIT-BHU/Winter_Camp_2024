@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="arena">
+
+    <link name="boundary">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_field_1_20">
+        <origin xyz="-0.37359 17.80021 0.49249" rpy="0 0 1.57"/>
+        <geometry>
+          <box size="0.0795 36.25032 1.58993"/>
+        </geometry>
+        <material name="field_1_20_visual_material"/>
+      </visual>
+      <visual name="visual_0_field_1_21">
+        <origin xyz="-0.37359 -17.17816 0.49249" rpy="0 0 1.57"/>
+        <geometry>
+          <box size="0.0795 36.25032 1.58993"/>
+        </geometry>
+        <material name="field_1_21_visual_material"/>
+      </visual>
+      <visual name="visual_0_field_1_22">
+        <origin xyz="17.81516 0.31103 0.49249" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0795 34.97837 1.58993"/>
+        </geometry>
+        <material name="field_1_22_visual_material.001"/>
+      </visual>
+      <visual name="visual_0_field_1_23">
+        <origin xyz="-18.56234 0.31103 0.49249" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0795 34.97837 1.58993"/>
+        </geometry>
+        <material name="field_1_23_visual_material"/>
+      </visual>
+      <collision name="collision_0_field_1_20.000">
+        <origin xyz="-0.37359 17.80021 0.49249" rpy="0 0 1.57"/>
+        <geometry>
+          <box size="0.0795 36.25032 1.58993"/>
+        </geometry>
+      </collision>
+      <collision name="collision_0_field_1_21.000">
+        <origin xyz="-0.37359 -17.17816 0.49249" rpy="0 0 1.57"/>
+        <geometry>
+          <box size="0.0795 36.25032 1.58993"/>
+        </geometry>
+      </collision>
+      <collision name="collision_0_field_1_22.000">
+        <origin xyz="17.81516 0.31103 0.49249" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0795 34.97837 1.58993"/>
+        </geometry>
+      </collision>
+      <collision name="collision_0_field_1_23.000">
+        <origin xyz="-18.56234 0.31103 0.49249" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0795 34.97837 1.58993"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="field_1">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_field_1_10">
+        <origin xyz="-0.37359 0.31103 0.00086" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Field.001.dae" scale="3.49784 4.70071 4.76978"/>
+        </geometry>
+        <material name="field_1_10_visual_material"/>
+      </visual>
+      <collision name="collision_4_field_1">
+        <origin xyz="-0.37359 0.31103 0.00086" rpy="0 0 0"/>
+        <geometry>
+          <box size="36.29588 34.78526 0.01431"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="field_1_10">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+    </link>
+
+    <link name="field_1_3">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_field_1_3">
+        <origin xyz="-0.0403 0 -0.25252" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Goalsopponent.dae" scale="3.09574 1.58993 1.58993"/>
+        </geometry>
+        <material name="field_1_3_visual_material"/>
+      </visual>
+      <collision name="Cube.004">
+        <origin xyz="0.28285 -2.15724 0.20997" rpy="0 0 -3.14159"/>
+        <geometry>
+          <box size="2.34629 0.24 2.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.005">
+        <origin xyz="0.28285 2.1699 0.20997" rpy="0 0 -3.14159"/>
+        <geometry>
+          <box size="2.34629 0.24 2.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.008">
+        <origin xyz="1.398 0.02224 0.18806" rpy="0 0 1.5708"/>
+        <geometry>
+          <box size="4.48805 0.31154 2.4"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="field_1_4">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_field_1_4">
+        <origin xyz="-0.13031 8e-05 -0.25252" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Goalsopponent.002.dae" scale="2.975 1.58993 1.58993"/>
+        </geometry>
+        <material name="field_1_4_visual_material"/>
+      </visual>
+      <collision name="Cube">
+        <origin xyz="0.26586 2.11104 0.20997" rpy="0 0 3.14095"/>
+        <geometry>
+          <box size="2.25478 0.24 2.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.006">
+        <origin xyz="0.26162 -2.15475 0.20997" rpy="0 0 3.14095"/>
+        <geometry>
+          <box size="2.25478 0.24 2.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.010">
+        <origin xyz="1.29761 -0.0285 0.18806" rpy="0 0 1.5698"/>
+        <geometry>
+          <box size="4.48806 0.29939 2.4"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="field_1_5">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_field_1_1">
+        <origin xyz="0.18094 0 -0.25252" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Goalsally.dae" scale="3.22758 1.58993 1.58993"/>
+        </geometry>
+        <material name="field_1_1_visual_material"/>
+      </visual>
+      <collision name="Cube.002">
+        <origin xyz="-0.17927 2.12565 0.20997" rpy="0 0 -3.14159"/>
+        <geometry>
+          <box size="2.44621 0.24 2.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.003">
+        <origin xyz="-0.17927 -2.15724 0.20997" rpy="0 0 -3.14159"/>
+        <geometry>
+          <box size="2.44621 0.24 2.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.009">
+        <origin xyz="-1.28207 0.02224 0.18806" rpy="0 0 1.5708"/>
+        <geometry>
+          <box size="4.48805 0.3248 2.4"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="field_1_6">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_field_1_2">
+        <origin xyz="0.53928 0.00569 -0.25252" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Goalsally.002.dae" scale="3.35214 1.58993 1.58993"/>
+        </geometry>
+        <material name="field_1_2_visual_material"/>
+      </visual>
+      <collision name="Cube.001">
+        <origin xyz="0.19793 -2.08137 0.20997" rpy="0 0 3.14103"/>
+        <geometry>
+          <box size="2.54062 0.24 2.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.007">
+        <origin xyz="0.18283 2.11675 0.20997" rpy="0 0 3.14103"/>
+        <geometry>
+          <box size="2.54062 0.24 2.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.011">
+        <origin xyz="-1.01558 0.01088 0.18806" rpy="0 0 1.56968"/>
+        <geometry>
+          <box size="4.41311 0.33734 2.4"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="field_1_9">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_field_1_11">
+        <origin xyz="0.91214 -0.46502 -0.10845" rpy="0 0 1.57"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Lines.dae" scale="3.17985 4.76978 4.76978"/>
+        </geometry>
+        <material name="field_1_11_visual_material"/>
+      </visual>
+      <visual name="visual_0_field_1_9">
+        <origin xyz="-0.15082 -0.92735 -0.08445" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Lines.002.dae" scale="3.17985 4.76978 4.76978"/>
+        </geometry>
+        <material name="field_1_9_visual_material"/>
+      </visual>
+    </link>
+
+    <link name="new_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_field_1_5">
+        <origin xyz="-13.13893 0.37254 1.28951" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Goalsallyback.dae" scale="3.22758 1.58993 1.58993"/>
+        </geometry>
+        <material name="field_1_5_visual_material"/>
+      </visual>
+      <visual name="visual_0_field_1_6">
+        <origin xyz="-0.31394 13.57782 1.28951" rpy="0 0 -1.57"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Goalsallyback.001.dae" scale="3.35214 1.58993 1.58993"/>
+        </geometry>
+        <material name="field_1_6_visual_material"/>
+      </visual>
+      <visual name="visual_0_field_1_7">
+        <origin xyz="12.72299 0.37254 1.28951" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Goalsopponentback.003.dae" scale="3.09574 1.58993 1.58993"/>
+        </geometry>
+        <material name="field_1_7_visual_material.001"/>
+      </visual>
+      <visual name="visual_0_field_1_8">
+        <origin xyz="-0.31942 -12.46241 1.28951" rpy="0 0 -1.57"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Goalsopponentback.dae" scale="2.975 1.58993 1.58993"/>
+        </geometry>
+        <material name="field_1_8_visual_material"/>
+      </visual>
+    </link>
+
+    <joint name="boundary" type="floating">
+      <origin xyz="0 0 -0.264" rpy="0 0 0"/>
+      <parent link="field_1"/>
+      <child link="boundary"/>
+    </joint>
+
+    <joint name="field_1_10_fixing" type="fixed">
+      <origin xyz="0 0.31103 0.1527" rpy="0 0 0"/>
+      <parent link="field_1"/>
+      <child link="field_1_10"/>
+      <limit effort="1" velocity="20"/>
+    </joint>
+
+    <joint name="field_1_3_fixing" type="fixed">
+      <origin xyz="12.36481 0 1.03193" rpy="0 0 0"/>
+      <parent link="field_1"/>
+      <child link="field_1_3"/>
+      <limit effort="1" velocity="20"/>
+    </joint>
+
+    <joint name="field_1_4_fixing" type="fixed">
+      <origin xyz="0 -12.18337 1.03193" rpy="0 0 -1.57"/>
+      <parent link="field_1"/>
+      <child link="field_1_4"/>
+      <limit effort="1" velocity="20"/>
+    </joint>
+
+    <joint name="field_1_5_fixing" type="fixed">
+      <origin xyz="-12.25401 0 1.03193" rpy="0 0 0"/>
+      <parent link="field_1"/>
+      <child link="field_1_5"/>
+      <limit effort="1" velocity="20"/>
+    </joint>
+
+    <joint name="field_1_6_fixing" type="fixed">
+      <origin xyz="0 12.8522 1.03193" rpy="0 0 -1.57"/>
+      <parent link="field_1"/>
+      <child link="field_1_6"/>
+      <limit effort="1" velocity="20"/>
+    </joint>
+
+    <joint name="field_1_9_fixing" type="fixed">
+      <origin xyz="0 0.31103 0.1527" rpy="0 0 0"/>
+      <parent link="field_1"/>
+      <child link="field_1_9"/>
+      <limit effort="1" velocity="20"/>
+    </joint>
+
+    <joint name="new_link" type="floating">
+      <origin xyz="0.31985 -0.37254 0.0176" rpy="0 0 0"/>
+      <parent link="field_1"/>
+      <child link="new_link"/>
+    </joint>
+
+    <material name="field_1_10_visual_material">
+      <color rgba="0 0.3 0 1.0"/>
+    </material>
+
+    <material name="field_1_11_visual_material">
+      <color rgba="0.91765 0.91765 0.91765 1.0"/>
+    </material>
+
+    <material name="field_1_1_visual_material">
+      <color rgba="0 0 1.0 1.0"/>
+    </material>
+
+    <material name="field_1_20_visual_material">
+      <color rgba="0.16265 0.06479 0.00725 1.0"/>
+    </material>
+
+    <material name="field_1_21_visual_material">
+      <color rgba="0.08354 0.01947 0.00556 1.0"/>
+    </material>
+
+    <material name="field_1_22_visual_material.001">
+      <color rgba="0.4 0.2 0 1.0"/>
+    </material>
+
+    <material name="field_1_23_visual_material">
+      <color rgba="0.4 0.2 0 1.0"/>
+    </material>
+
+    <material name="field_1_2_visual_material">
+      <color rgba="1.0 1.0 0 1.0"/>
+    </material>
+
+    <material name="field_1_3_visual_material">
+      <color rgba="1.0 0 0 1.0"/>
+    </material>
+
+    <material name="field_1_4_visual_material">
+      <color rgba="0.6 0 0.4 1.0"/>
+    </material>
+
+    <material name="field_1_5_visual_material">
+      <color rgba="0.36131 0.18448 0.00061 1.0"/>
+    </material>
+
+    <material name="field_1_6_visual_material">
+      <color rgba="0.30499 0.15593 0 1.0"/>
+    </material>
+
+    <material name="field_1_7_visual_material.001">
+      <color rgba="0.58144 0.2893 0 1.0"/>
+    </material>
+
+    <material name="field_1_8_visual_material">
+      <color rgba="0.36131 0.18448 0.00061 1.0"/>
+    </material>
+
+    <material name="field_1_9_visual_material">
+      <color rgba="0.91765 0.91765 0.91765 1.0"/>
+    </material>
+
+  </robot>

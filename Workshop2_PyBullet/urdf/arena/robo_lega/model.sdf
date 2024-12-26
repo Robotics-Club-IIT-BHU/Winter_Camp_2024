@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="robo_lega">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>100 100 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>100 100 0.1</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://robo_lega/materials/scripts</uri>
+            <uri>model://robo_lega/materials/textures</uri>
+            <name>vrc/redwhite</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

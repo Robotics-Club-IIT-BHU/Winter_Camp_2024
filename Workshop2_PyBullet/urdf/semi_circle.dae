@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+  <asset>
+    <contributor />
+    <unit meter="1" />
+  </asset>
+  <library_lights />
+  <library_materials />
+  <library_effects />
+  <library_cameras />
+  <library_geometries>
+    <geometry id="mesh_1">
+      <mesh>
+        <source id="mesh_1-position" name="position">
+          <float_array id="mesh_1-position-array" count="66">50.7760009765625 15.274999618530273 0 47.224998474121094 8.305000305175781 0 34.724998474121094 -0.7760000228881836 0 41.69499969482422 2.7750000953674316 0 51.99968338012695 22.99799919128418 0 3.2239999771118164 15.274999618530273 0 2.000316858291626 22.99799919128418 0 6.775000095367432 8.305000305175781 0 27 -2 0 19.274999618530273 -0.7760000228881836 0 34.724998474121094 -0.7760000228881836 1 51.99968338012695 22.99799919128418 1 27 -2 1 19.274999618530273 -0.7760000228881836 1 41.69499969482422 2.7750000953674316 1 12.305000305175781 2.7750000953674316 0 47.224998474121094 8.305000305175781 1 50.7760009765625 15.274999618530273 1 12.305000305175781 2.7750000953674316 1 2.000316858291626 22.99799919128418 1 3.2239999771118164 15.274999618530273 1 6.775000095367432 8.305000305175781 1 </float_array>
+          <technique_common>
+            <accessor source="#mesh_1-position-array" count="22" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_1-normal" name="normal">
+          <float_array id="mesh_1-normal-array" count="39">0 0 -1 0 0 1 0.4539506733417511 -0.8910267949104309 0 -0.4539506733417511 -0.8910267949104309 0 0.7071067690849304 -0.7071067690849304 0 -0.1564943641424179 -0.9876788258552551 0 0.8910267949104309 -0.4539506733417511 0 0.9876788258552551 -0.1564943641424179 0 0 1 0 0.1564943641424179 -0.9876788258552551 0 -0.9876788258552551 -0.1564943641424179 0 -0.8910267949104309 -0.4539506733417511 0 -0.7071067690849304 -0.7071067690849304 0 </float_array>
+          <technique_common>
+            <accessor source="#mesh_1-normal-array" count="13" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_1-vertices">
+          <input semantic="POSITION" source="#mesh_1-position" />
+        </vertices>
+        <triangles material="default" count="40">
+          <input semantic="VERTEX" source="#mesh_1-vertices" offset="0" />
+          <input semantic="NORMAL" source="#mesh_1-normal" offset="1" />
+          <p>0 0 1 0 2 0 3 0 2 0 1 0 4 0 0 0 5 0 6 0 4 0 5 0 7 0 5 0 0 0 8 0 9 0 0 0 10 1 11 1 12 1 13 1 12 1 11 1 10 2 2 2 3 2 3 2 14 2 10 2 9 3 13 3 15 3 3 4 1 4 16 4 3 4 16 4 14 4 8 5 12 5 13 5 8 5 13 5 9 5 1 6 0 6 17 6 1 6 17 6 16 6 0 7 4 7 11 7 0 7 11 7 17 7 15 0 7 0 0 0 9 0 15 0 0 0 8 0 0 0 2 0 14 1 16 1 10 1 17 1 10 1 16 1 11 1 10 1 17 1 13 3 18 3 15 3 11 1 19 1 20 1 11 1 20 1 21 1 11 1 21 1 18 1 11 1 18 1 13 1 19 8 11 8 6 8 4 8 6 8 11 8 12 9 8 9 2 9 12 9 2 9 10 9 19 10 6 10 5 10 19 10 5 10 20 10 5 11 7 11 21 11 5 11 21 11 20 11 7 12 15 12 18 12 7 12 18 12 21 12</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_images />
+  <library_visual_scenes>
+    <visual_scene id="Scene">
+      <node id="node_1" sid="node_1" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_1" />
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <library_animations />
+  <scene>
+    <instance_visual_scene url="#Scene" />
+  </scene>
+</COLLADA>

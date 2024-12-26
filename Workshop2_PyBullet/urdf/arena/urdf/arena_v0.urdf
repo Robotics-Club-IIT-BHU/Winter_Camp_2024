@@ -1,0 +1,130 @@
+<robot name="arena">
+
+  <material name="plane_color" >
+    <color rgba="0.6980392156862745 0.402156862745098 0.4196078431372549 1.0" />
+  </material>
+  <material name="boundary_color" >
+    <color rgba="0.20392156862745098 0.10980392156862745 0.10784313725490196 1.0" />
+  </material>
+  <material name="text_color" >
+    <color rgba="1.0 0.7501960784313725 0.48627450980392156 1.0" />
+  </material>
+
+  <link name="plane">
+    <contact>
+        <lateral_friction value="1"/>
+    </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="20 20 0.01"/>
+      </geometry>
+      <material name="plane_color"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="20 20 0.01"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="boundary">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="visual_wall_1">
+      <origin xyz="0 10 1" rpy="0 0 1.57"/>
+      <geometry>
+        <box size="0.1 20 2"/>
+      </geometry>
+      <material name="boundary_color"/>
+    </visual>
+    <visual name="visual_wall_2">
+      <origin xyz="0 -10 1" rpy="0 0 1.57"/>
+      <geometry>
+        <box size="0.1 20 2"/>
+      </geometry>
+      <material name="boundary_color"/>
+    </visual>
+    <visual name="visual_wall_3">
+      <origin xyz="10 0 1" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 20 2"/>
+      </geometry>
+      <material name="boundary_color"/>
+    </visual>
+    <visual name="visual_wall_4">
+      <origin xyz="-10 0 1" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 20 2"/>
+      </geometry>
+      <material name="boundary_color"/>
+    </visual>
+    <collision name="collision_wall_1">
+      <origin xyz="0 10 1" rpy="0 0 1.57"/>
+      <geometry>
+        <box size="0.1 20 2"/>
+      </geometry>
+    </collision>
+    <collision name="collision_wall_2">
+      <origin xyz="0 -10 1" rpy="0 0 1.57"/>
+      <geometry>
+        <box size="0.1 20 2"/>
+      </geometry>
+    </collision>
+    <collision name="collision_wall_3">
+      <origin xyz="10 0 1" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 20 2"/>
+      </geometry>
+    </collision>
+    <collision name="collision_wall_4">
+      <origin xyz="-10 0 1" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 20 2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="text">
+    <inertial>
+      <origin xyz="-3 0.3 0" rpy="0 0 -1.57"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="-3 0.3 0" rpy="0 0 -1.57"/>
+      <geometry>
+        <mesh filename="text.dae" scale="0.13 0.13 0.0008"/>
+      </geometry>
+      <material name="text_color"/>
+    </visual>
+    <collision>
+      <origin xyz="-3 0.3 0" rpy="0 0 -1.57"/>
+      <geometry>
+        <mesh filename="text.dae" scale="0.13 0.13 0.0008"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="plane_boundary" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="plane"/>
+    <child link="boundary"/>
+  </joint>
+
+  <joint name="plane_text" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="plane"/>
+    <child link="text"/>
+  </joint>
+
+</robot>

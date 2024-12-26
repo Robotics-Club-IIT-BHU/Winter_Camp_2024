@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="car_with_gripper">
+
+    <link name="back_left_wheel">
+  	  <contact>
+        <lateral_friction value="1.0"/>
+        <rolling_friction value="0.0"/>
+        <stiffness value="30000"/>
+        <damping value="1000"/>
+      </contact>    
+      <inertial>
+        <mass value="2.637"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.02467" iyz="0" izz="0.04411"/>
+      </inertial>
+      <visual name="visual_0_rear_left_wheel_link">
+        <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+        <geometry>
+          <mesh filename="Wheel.003.dae" scale="2.0 2.0 2.0"/>
+        </geometry>
+        <material name="DarkGrey"/>
+      </visual>
+      <collision name="collision_0_rear_left_wheel_link">
+        <origin xyz="3e-05 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.35552" length="0.22892"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="back_right_wheel">
+  	  <contact>
+        <lateral_friction value="1.0"/>
+        <rolling_friction value="0.0"/>
+        <stiffness value="30000"/>
+        <damping value="1000"/>
+      </contact>     
+      <inertial>
+        <mass value="2.637"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.02467" iyz="0" izz="0.04411"/>
+      </inertial>
+      <visual name="visual_0_rear_right_wheel_link">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="Wheel.001.dae" scale="2.0 2.0 2.0"/>
+        </geometry>
+        <material name="DarkGrey"/>
+      </visual>
+      <collision name="collision_0_rear_right_wheel_link">
+        <origin xyz="3e-05 0 0" rpy="3.14159 0 0"/>
+        <geometry>
+          <cylinder radius="0.35552" length="0.22892"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="front_left_wheel">
+  	  <contact>
+        <lateral_friction value="1.0"/>
+        <rolling_friction value="0.0"/>
+        <stiffness value="30000"/>
+        <damping value="1000"/>
+      </contact>     
+      <inertial>
+        <mass value="2.637"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.02467" iyz="0" izz="0.04411"/>
+      </inertial>
+      <visual name="visual_0_front_left_wheel_link">
+        <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+        <geometry>
+          <mesh filename="Wheel.002.dae" scale="2.0 2.0 2.0"/>
+        </geometry>
+        <material name="DarkGrey"/>
+      </visual>
+      <collision name="collision_0_front_left_wheel_link">
+        <origin xyz="3e-05 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.35552" length="0.22892"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="front_right_wheel">
+  	  <contact>
+        <lateral_friction value="1.0"/>
+        <rolling_friction value="0.0"/>
+        <stiffness value="30000"/>
+        <damping value="1000"/>
+      </contact>     
+      <inertial>
+        <mass value="2.637"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.02467" iyz="0" izz="0.04411"/>
+      </inertial>
+      <visual name="visual_0_front_right_wheel_link">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="Wheel.dae" scale="2.0 2.0 2.0"/>
+        </geometry>
+        <material name="DarkGrey"/>
+      </visual>
+      <collision name="collision_0_front_right_wheel_link">
+        <origin xyz="3e-05 0 0" rpy="3.14159 0 0"/>
+        <geometry>
+          <cylinder radius="0.35552" length="0.22892"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="gripper_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="Cube">
+        <origin xyz="0.02853 0 0.22159" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="Cube.012.dae" scale="0.025 1.0 0.2"/>
+        </geometry>
+        <material name="Material_gripper"/>
+      </visual>
+      <visual name="Cube.001">
+        <origin xyz="0.09126 -0.7 0.74384" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="Cube.013.dae" scale="0.54 0.04 0.04"/>
+        </geometry>
+        <material name="Material_gripper"/>
+      </visual>
+      <visual name="Cube.004">
+        <origin xyz="0.09126 0.7 0.74384" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="Cube.016.dae" scale="0.54 0.04 0.04"/>
+        </geometry>
+        <material name="Material_gripper"/>
+      </visual>
+      <collision name="Cube">
+        <origin xyz="0.02853 0 0.22159" rpy="0 1.5708 0"/>
+        <geometry>
+          <box size="0.05 2.0 0.4"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.001">
+        <origin xyz="0.09126 -0.7 0.74384" rpy="0 1.5708 0"/>
+        <geometry>
+          <box size="1.08 0.08 0.08"/>
+        </geometry>
+      </collision>
+      <collision name="Cube.004">
+        <origin xyz="0.09126 0.7 0.74384" rpy="0 1.5708 0"/>
+        <geometry>
+          <box size="1.08 0.08 0.08"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="left_gripper">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="Cube.002">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="Cube.017.dae" scale="0.52 0.03 0.03"/>
+        </geometry>
+        <material name="Material_gripper"/>
+      </visual>
+      <collision name="Cube.002">
+        <origin xyz="-0.46297 -0.00727 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.93792 0.06903 0.06"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link_chassis">
+    <inertial>
+      <mass value="33.455"/>
+      <origin xyz="-0.08748 -0.00085 0.09947"/>
+      <inertia ixx="0.6022" ixy="-0.02364" ixz="-0.1197" iyy="1.7386" iyz="-0.001544" izz="2.0296"/>
+    </inertial>
+      <visual name="visual_0_base_link">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="Base Link.dae" scale="2.0 2.0 2.0"/>
+        </geometry>
+        <material name="Black"/>
+      </visual>
+      <visual name="visual_0_front_bumper_link">
+        <origin xyz="-0.95647 0 0.18682" rpy="0 -3.14159 0"/>
+        <geometry>
+          <mesh filename="Bumper.001.dae" scale="2.0 2.0 2.0"/>
+        </geometry>
+        <material name="DarkGrey"/>
+      </visual>
+      <collision name="collision_0_base_link">
+        <origin xyz="0 0 0.22138" rpy="0 0 0"/>
+        <geometry>
+          <box size="1.96928 0.85643 0.45546"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="right_gripper">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="Cube.003">
+        <origin xyz="0 0 0" rpy="-3.14159 0 1.5708"/>
+        <geometry>
+          <mesh filename="Cube.018.dae" scale="0.51 0.03 0.03"/>
+        </geometry>
+        <material name="Material_gripper"/>
+      </visual>
+      <collision name="Cube.003">
+        <origin xyz="0.00971 -0.47324 0" rpy="-3.14159 0 1.5708"/>
+        <geometry>
+          <box size="0.9334 0.07221 0.06"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="top_plate_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="visual_0_top_plate_link">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="Top Plate.dae" scale="2.0 2.0 2.0"/>
+        </geometry>
+        <material name="Yellow"/>
+      </visual>
+    </link>
+
+    <link name="shooter">
+      <inertial>
+        <origin xyz="-0.3 0 0.2" rpy="0 1.57 0"/>
+        <mass value="0.1"/>
+        <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+      </inertial>
+      <visual>
+        <origin xyz="-0.3 0 0.2" rpy="0 1.57 0"/>
+        <geometry>
+          <cylinder length="1.5" radius="0.04"/>
+        </geometry>
+        <material name="darkbrown"/>
+      </visual>
+      <collision>
+        <origin xyz="-0.3 0 0.2" rpy="0 1.57 0"/>
+        <geometry>
+          <cylinder length="1" radius="0.2"/>
+        </geometry>
+      </collision>  
+    </link>
+
+    <joint name="back_left_wheel" type="continuous">
+      <origin xyz="0.51273 -0.57095 0.06809" rpy="1.5708 0 0"/>
+      <parent link="link_chassis"/>
+      <child link="back_left_wheel"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="10.0" velocity="3.14"/>
+    </joint>
+
+    <joint name="back_right_wheel" type="continuous">
+      <origin xyz="0.51754 0.57095 0.06809" rpy="-1.5708 0 0"/>
+      <parent link="link_chassis"/>
+      <child link="back_right_wheel"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="10.0" velocity="3.14"/>
+    </joint>
+
+    <joint name="front_left_wheel" type="continuous">
+      <origin xyz="-0.51189 -0.57 0.06809" rpy="1.5708 0 0"/>
+      <parent link="link_chassis"/>
+      <child link="front_left_wheel"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="10.0" velocity="3.14"/>
+    </joint>
+
+    <joint name="front_right_wheel" type="continuous">
+      <origin xyz="-0.51205 0.57095 0.06809" rpy="-1.5708 0 0"/>
+      <parent link="link_chassis"/>
+      <child link="front_right_wheel"/>
+      <axis xyz="0 0 1.0"/>
+      <limit effort="10.0" velocity="3.14"/>
+    </joint>
+
+    <joint name="gripper_link" type="floating">
+      <origin xyz="-0.73516 0 0.27954" rpy="0 -1.5708 0"/>
+      <parent link="link_chassis"/>
+      <child link="gripper_link"/>
+    </joint>
+
+    <joint name="left_gripper" type="revolute">
+      <origin xyz="0.02126 -0.7 1.25384" rpy="-1.5708 0.7854 -1.5708"/>
+      <parent link="gripper_link"/>
+      <child link="left_gripper"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="0" upper="3.93" effort="10.0" velocity="3.14"/>
+    </joint>
+
+    <joint name="right_gripper" type="revolute">
+      <origin xyz="0.02126 0.7 1.25384" rpy="-1.5708 0.7854 -1.5708"/>
+      <parent link="gripper_link"/>
+      <child link="right_gripper"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.93" upper="0" effort="10.0" velocity="3.14"/>
+    </joint>
+
+    <joint name="top_plate_link" type="floating">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="link_chassis"/>
+      <child link="top_plate_link"/>
+    </joint>
+
+    <joint name="top_plate_shooter" type="prismatic">
+      <parent link="top_plate_link"/>
+      <child link="shooter"/>
+      <limit effort="1.0" lower="-40" upper="40" velocity="0.5"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </joint>
+
+    <material name="Black">
+      <color rgba="0.1 0.1 0.1 1.0"/>
+    </material>
+
+    <material name="DarkGrey">
+      <color rgba="0.3 0.3 0.3 1.0"/>
+    </material>
+
+    <material name="Material_gripper">
+      <color rgba="0.4 0.4 0.4 1.0"/>
+    </material>
+
+    <material name="Yellow">
+      <color rgba="0.8 0.8 0.01 1.0"/>
+    </material>
+
+    <material name="darkbrown" >
+      <color rgba="0.20392156862745098 0.10980392156862745 0.00784313725490196 1.0" />
+    </material>
+
+  </robot>

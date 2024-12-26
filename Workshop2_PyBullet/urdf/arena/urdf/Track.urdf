@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot name="2d_cube">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="60 40 0.01"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="60 40 0.01"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+</robot>
