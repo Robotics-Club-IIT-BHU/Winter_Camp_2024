@@ -155,7 +155,7 @@ Before starting Task 03, it's recommended to understand PID control concepts. Wa
 ---
 
 ## Workshop Recording
-If you missed the workshop or want to revisit the concepts, the complete recording is available on YouTube. Watch it here: [Pybullet Workshop Recording](#) {will update soon}
+If you missed the workshop or want to revisit the concepts, the complete recording is available here: [Pybullet Workshop Recording](https://drive.google.com/drive/folders/1zuhOE5z8jLtHmPC2mUknTuhQgz-vYqPS?usp=sharing)
 
 ---
 
